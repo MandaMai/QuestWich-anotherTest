@@ -2,12 +2,14 @@
 
 ## Instructions on how I built the application
 ### Initial Setup
+1. Create Angular Application
+```
+ng new Quest-Portal
+```
 1. Test
 1. Test
 1. Test
 1. Test
-1. Test
-<br />
 
 ### References and Tutorials Used
 :link: [Tutorial Reference](https://www.c-sharpcorner.com/article/angular-5-crud-opration-using-nodeexpressmongo/)<br />
