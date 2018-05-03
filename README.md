@@ -10,19 +10,49 @@
 ```
 ng new Quest-Portal
 ```
-1. Install Express and Mongoose
+2. Install Express and Mongoose
 ```
 npm install express --save
 npm install mongoose --save
 npm install body-parser --save
 ```
-1. Create server.js file in main directory (Quest-Portal)
+3. Create server.js file in main directory (Quest-Portal)
 ```
 //From ~/Desktop/QuestWich/Quest-Portal
 touch server.js
 ```
-1. Test
-1. Test
+4. Start Mongo database from anywhere (I would recommend Quest-Portal for consistency)
+```
+mongod
+```
+5. Start Application Server from main directory (Quest-Portal)
+```
+node server.js
+```
+6. Create Angular Service for common AJAX API calling from main directory (Quest-Portal).
+```
+//File will be saved in Quest-Portal/src/app
+ng g s common -spec=false
+```
+7. Run Angular App from main directory (Quest-Portal)
+```
+ng serve
+```
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+
+
 
 ### References and Tutorials Used
 :link: [Tutorial Reference](https://www.c-sharpcorner.com/article/angular-5-crud-opration-using-nodeexpressmongo/)<br />
