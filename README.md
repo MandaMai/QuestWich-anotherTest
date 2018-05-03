@@ -1,13 +1,26 @@
 # QuestWich
 
 ## Instructions on how I built the application
+### File Structure for Project
+#### Quest-Portal
+#### User-Portal
+
 ### Initial Setup
 1. Create Angular Application
 ```
 ng new Quest-Portal
 ```
-1. Test
-1. Test
+1. Install Express and Mongoose
+```
+npm install express --save
+npm install mongoose --save
+npm install body-parser --save
+```
+1. Create server.js file in main directory (Quest-Portal)
+```
+//From ~/Desktop/QuestWich/Quest-Portal
+touch server.js
+```
 1. Test
 1. Test
 
@@ -19,3 +32,5 @@ ng new Quest-Portal
 ### Technologies Used
 :link: [Angular CLI](https://cli.angular.io)<br />
 :link: [Angular](https://angular.io)<br />
+:link: [Visual Studio Code](https://code.visualstudio.com)<br />
+
