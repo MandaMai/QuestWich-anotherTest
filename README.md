@@ -31,11 +31,21 @@ git commit -m "basic note for what was changed"
 7. You may be prompted to log into Git in order for changes to be accepted successfully
 
 #### Through Visual Studio Code
-1. Click Source Control Tab (on right-hand side of application)
+1. Navigate to Source Control Tab (on right-hand side of application)
+1. Create New Branch in VS Code
+1. Make Code Changes
+1. Navigate to Source Control Tab (on right-hand side of application)
+1. Click Three Dots (...) And Select Pull
 1. Enter Commit Message
 1. Click Check Mark
 1. When Prompted Let Visual Studio Code Stage Changes
 1. Click Three Dots (...) And Select Push
+1. Navigate to GitHub Project [QuestWich](https://github.com/MandaMai/QuestWich)
+1. Click Button to Create Pull Request
+1. Navigate to Pull Requests and Ensure Request Can Merge
+1. Merge Branch to Master
+1. Navigate back to VS Code to the Source Control Tab
+1. Click Three Dots (...) And Select Pull
 
 ### Initial Setup
 1. Create Angular Application
