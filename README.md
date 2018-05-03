@@ -4,6 +4,37 @@
 ### File Structure for Project
 #### Quest-Portal
 #### User-Portal
+### Pushing Changes to Git
+#### Through Commandline
+1. Go to application folder (Quest-Portal)
+2. Pull any existing changes
+```
+git pull
+```
+3. Add changes to stage
+```
+git add .
+```
+4. Check what was added
+```
+git status
+```
+5. Commit changes
+```
+git commit -m "basic note for what was changed"
+```
+6. Push changes to git
+```
+git push
+```
+7. You may be prompted to log into Git in order for changes to be accepted successfully
+
+#### Through Visual Studio Code
+1. Click Source Control Tab (on right-hand side of application)
+1. Enter Commit Message
+1. Click Check Mark
+1. When Prompted Let Visual Studio Code Stage Changes
+1. Click Three Dots (...) And Select Push
 
 ### Initial Setup
 1. Create Angular Application
