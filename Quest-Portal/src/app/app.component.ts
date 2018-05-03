@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormsModule } from '@angular/forms';
+import { Component, OnInit } from '../../node_modules/@angular/core';
+import { FormGroup, FormControl, Validators, FormsModule } from '../../node_modules/@angular/forms';
 import { CommonService } from './common.service';
 
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { Http, Response, Headers, RequestOptions } from '../../node_modules/@angular/http';
 
 @Component({
   selector: 'app-root',

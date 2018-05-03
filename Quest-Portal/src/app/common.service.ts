@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { Injectable } from '../../node_modules/@angular/core';
+import { Http, Response, Headers, RequestOptions } from '../../node_modules/@angular/http';
 
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/do';
+import { Observable } from '../../node_modules/rxjs/Observable';
+import '../../node_modules/rxjs/add/operator/map';
+import '../../node_modules/rxjs/add/operator/do';
 
 @Injectable()
 export class CommonService {
