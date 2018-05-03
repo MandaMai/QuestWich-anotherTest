@@ -38,7 +38,18 @@ ng g s common -spec=false
 ```
 ng serve
 ```
-8.
+8. Use Yarn to add bootstrap to project
+```
+yarn add bootstrap ngx-bootstrap
+```
+You will also need to add entry to styles array in .angular-cli.json file in src folder
+Styles in .angular-cli.json will look like this...
+```
+"styles": [
+    "styles.css"
+    ,”../node_modules/bootstrap/dist/css/bootstrap.min.css”
+    ],
+```
 9.
 10.
 11.
@@ -57,11 +68,14 @@ ng serve
 ### References and Tutorials Used
 :link: [Tutorial Reference](https://www.c-sharpcorner.com/article/angular-5-crud-opration-using-nodeexpressmongo/)<br />
 :link: [Additioan Tutorial Reference](http://www.belatrixsf.com/blog/how-to-easily-build-an-angular-5-app-using-visual-studio-code/)<br />
-..*Adding Bootstrap and Yarn to Project
-<br />
+..*Adding Bootstrap and Yarn to Project<br />
+
+:link: [Jasmine and Karma Testing](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/debug-test/basic-tests-with-jasmine?view=toolsforcordova-2017)<br />
 
 ### Technologies Used
 :link: [Angular CLI](https://cli.angular.io)<br />
 :link: [Angular](https://angular.io)<br />
 :link: [Visual Studio Code](https://code.visualstudio.com)<br />
+:link: [Yarn](https://yarnpkg.com/en/)<br />
+:link: [Karma]()<br />
 
