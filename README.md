@@ -1,6 +1,15 @@
 # QuestWich
 
 ## Instructions on how I built the application
+## Running the Application
+1. Start MongoDB
+```mongod```
+2. Start Node Server
+```node server.js```
+3. Start Angular Application
+```ng serve```
+4. Have a fourth bash open for Git (if choosing to upload code to github that way)
+
 ### File Structure for Project
 #### Quest-Portal
 #### User-Portal
