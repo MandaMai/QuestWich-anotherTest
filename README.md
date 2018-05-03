@@ -1,15 +1,45 @@
 # QuestWich
 
 ## Instructions on how I built the application
+## Running the Application
+1. Start MongoDB
+```mongod```
+2. Start Node Server
+```node server.js```
+3. Start Angular Application
+```ng serve```
+4. Have a fourth bash open for Git (if choosing to upload code to github that way)
+
 ### File Structure for Project
 #### Quest-Portal
 #### User-Portal
+### Pushing Changes to Git
+#### Through Commandline
+1. Go to application folder (Quest-Portal)
+2. Pull any existing changes
+```git pull```
+3. Add changes to stage
+```git add .```
+4. Check what was added
+```git status```
+5. Commit changes
+```
+git commit -m "basic note for what was changed"
+```
+6. Push changes to git
+```git push```
+7. You may be prompted to log into Git in order for changes to be accepted successfully
+
+#### Through Visual Studio Code
+1. Click Source Control Tab (on right-hand side of application)
+1. Enter Commit Message
+1. Click Check Mark
+1. When Prompted Let Visual Studio Code Stage Changes
+1. Click Three Dots (...) And Select Push
 
 ### Initial Setup
 1. Create Angular Application
-```
-ng new Quest-Portal
-```
+```ng new Quest-Portal```
 2. Install Express and Mongoose
 ```
 npm install express --save
@@ -22,22 +52,16 @@ npm install body-parser --save
 touch server.js
 ```
 4. Start Mongo database from anywhere (I would recommend Quest-Portal for consistency)
-```
-mongod
-```
+```mongod```
 5. Start Application Server from main directory (Quest-Portal)
-```
-node server.js
-```
+```node server.js```
 6. Create Angular Service for common AJAX API calling from main directory (Quest-Portal).
 ```
 //File will be saved in Quest-Portal/src/app
 ng g s common -spec=false
 ```
 7. Run Angular App from main directory (Quest-Portal)
-```
-ng serve
-```
+```ng serve```
 8. Use Yarn to add bootstrap to project
 ```
 yarn add bootstrap ngx-bootstrap
