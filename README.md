@@ -50,7 +50,11 @@ Styles in .angular-cli.json will look like this...
     ,”../node_modules/bootstrap/dist/css/bootstrap.min.css”
     ],
 ```
-9.
+9. Restart angular server
+```
+Ctrl+C
+ng serve
+```
 10.
 11.
 12.
