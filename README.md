@@ -89,7 +89,7 @@ Styles in .angular-cli.json will look like this...
 Ctrl+C
 ng serve
 ```
-10.
+10. Add Sass to Project (see tutorial below to go through the conversion from .css to .scss. In the future, could change initial project command to  ```ng new app-name --style=scss```
 11.
 12.
 13.
@@ -109,6 +109,7 @@ ng serve
 ..*Adding Bootstrap and Yarn to Project<br />
 
 :link: [Jasmine and Karma Testing](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/debug-test/basic-tests-with-jasmine?view=toolsforcordova-2017)<br />
+:link: [Adding Sass to Project](https://scotch.io/tutorials/using-sass-with-the-angular-cli)<br />
 
 ### Technologies Used
 :link: [Angular CLI](https://cli.angular.io)<br />
