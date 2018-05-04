@@ -91,7 +91,10 @@ ng serve
 ```
 10. Add Sass to Project (see tutorial below to go through the conversion from .css to .scss. In the future, could change initial project command to  ```ng new app-name --style=scss```
 11. Generate Resources Component ```ng generate component resources```
-12.
+12. Install JQuery and Popper for Bootstrap menu
+```
+ng install jquery popper.js --save
+```
 13.
 14.
 15.
