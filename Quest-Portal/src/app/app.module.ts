@@ -1,8 +1,8 @@
-import { BrowserModule } from '../../node_modules/@angular/platform-browser';
-import { NgModule } from '../../node_modules/@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import { HttpModule } from '../../node_modules/@angular/http';
-import { FormsModule, ReactiveFormsModule } from '../../node_modules/@angular/forms';
+import { HttpModule } from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CommonService } from './common.service';
