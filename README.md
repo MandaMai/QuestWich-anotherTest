@@ -95,7 +95,7 @@ ng serve
 ```
 ng install jquery popper.js --save
 ```
-13.
+13. Add app-routing.module.ts to app folder
 14.
 15.
 16.
