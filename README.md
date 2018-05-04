@@ -95,8 +95,9 @@ ng serve
 ```
 ng install jquery popper.js --save
 ```
-13.
-14.
+13. Add app-routing.module.ts to app folder
+14. If you get an error when making a new component about "more than one module matches" use this command to create a new component:
+```ng g c newName --module app``` to add component to the app directory
 15.
 16.
 17.
