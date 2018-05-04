@@ -90,7 +90,7 @@ Ctrl+C
 ng serve
 ```
 10. Add Sass to Project (see tutorial below to go through the conversion from .css to .scss. In the future, could change initial project command to  ```ng new app-name --style=scss```
-11.
+11. Generate Resources Component ```ng generate component resources```
 12.
 13.
 14.
