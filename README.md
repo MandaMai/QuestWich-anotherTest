@@ -90,8 +90,11 @@ Ctrl+C
 ng serve
 ```
 10. Add Sass to Project (see tutorial below to go through the conversion from .css to .scss. In the future, could change initial project command to  ```ng new app-name --style=scss```
-11.
-12.
+11. Generate Resources Component ```ng generate component resources```
+12. Install JQuery and Popper for Bootstrap menu
+```
+ng install jquery popper.js --save
+```
 13.
 14.
 15.
@@ -110,6 +113,7 @@ ng serve
 
 :link: [Jasmine and Karma Testing](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/debug-test/basic-tests-with-jasmine?view=toolsforcordova-2017)<br />
 :link: [Adding Sass to Project](https://scotch.io/tutorials/using-sass-with-the-angular-cli)<br />
+:link: [Icons used on site from FontAwesome](https://fontawesome.com/icons?d=listing&s=regular&m=free)<br />
 
 ### Technologies Used
 :link: [Angular CLI](https://cli.angular.io)<br />
