@@ -1,153 +1,36 @@
-
-
-<div class="container">
-  <form #userForm="ngForm"   (ngSubmit)="onSave(userForm.value)" novalidate>
-    <div class="form-group">
-        <input name="id" type="hidden"     [(ngModel)]="id" />  
-        <label for="name">Name</label>
-        <input name="name" id="name" type="text"  aria-describedby="nameHelp" class="form-control" placeholder="Enter name" required  [(ngModel)]="name" />
-        <small id="nameHelp" class="form-text text-muted">Enter your first and last name. This is not your username.</small>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/users">User Stuff</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/resources">Resources and References</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
     </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input name="email" required  type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required [(ngModel)]="email" />
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input name="password" required  type="password"  class="form-control" id="password" placeholder="Password" [(ngModel)]="password" />
-      <small class="form-text text-muted">Is "myForm" valid? {{userForm.valid}}</small>  
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
-
-<div class="container" style="font-size:3em; color:slategray">
-  <i class="fas fa-pencil-alt"></i>
-  <i class="fas fa-trash-alt"></i>
-  <i class="fas fa-sign-in-alt"></i>
-  <i class="fas fa-sign-out-alt"></i>
-  <i class="fas fa-bookmark"></i>
-  <i class="fas fa-arrow-right"></i>
-  <i class="fas fa-arrow-left"></i>
-  <i class="fas fa-asterisk"></i>
-  <i class="far fa-circle"></i>
-  <i class="fas fa-trophy"></i>
-  <i class="fas fa-wine-glass"></i>
-  <i class="far fa-bell"></i>
-  <i class="fas fa-book"></i>
-  <i class="fas fa-bolt"></i>
-  <i class="fas fa-calculator"></i>
-  <i class="far fa-calendar-alt"></i>
-  <i class="fas fa-camera-retro"></i>
-  <i class="far fa-clipboard"></i>
-  <i class="far fa-comment"></i>
-  <i class="fas fa-ellipsis-h"></i>
-  <i class="fas fa-ellipsis-v"></i>
-  <i class="fas fa-exclamation"></i>
-  <i class="far fa-file"></i>
-  <i class="far fa-file-alt"></i>
-  <i class="fas fa-film"></i>
-  <i class="fas fa-fire"></i>
-  <i class="far fa-flag"></i>
-  <i class="fas fa-flask"></i>
-  <i class="fas fa-gamepad"></i>
-  <i class="fas fa-graduation-cap"></i>
-  <i class="fas fa-home"></i>
-  <i class="far fa-lightbulb"></i>
-  <i class="fas fa-lock"></i>
-  <i class="fas fa-lock-open"></i>
-  <i class="fas fa-long-arrow-alt-right"></i>
-  <i class="fas fa-magic"></i>
-  <i class="far fa-map"></i>
-  <i class="fas fa-map-signs"></i>
-  <i class="far fa-paper-plane"></i>
-  <i class="fas fa-paw"></i>
-  <i class="fas fa-pause"></i>
-  <i class="fas fa-plus"></i>
-  <i class="fas fa-print"></i>
-  <i class="fas fa-question-circle"></i>
-  <i class="far fa-question-circle"></i>
-  <i class="fas fa-quidditch"></i>
-  <i class="fas fa-random"></i>
-  <i class="fas fa-readme"></i>
-  <i class="fas fa-road"></i>
-  <i class="fas fa-rocket"></i>
-  <i class="fas fa-search"></i>
-  <i class="fas fa-shopping-basket"></i>
-  <i class="fas fa-sitemap"></i>
-  <i class="fas fa-sliders-h"></i>
-  <i class="fas fa-smile"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star-half"></i>
-  <i class="far fa-star"></i>
-  <i class="far fa-star-half"></i>
-  <i class="fas fa-sticky-note"></i>
-  <i class="fas fa-suitcase"></i>
-  <i class="fas fa-table"></i>
-  <i class="fas fa-tachometer-alt"></i>
-  <i class="fas fa-tasks"></i>
-  <i class="fas fa-tag"></i>
-  <i class="fas fa-sort-alpha-up"></i>
-  <i class="fas fa-sort-alpha-down"></i>
-  <i class="fas fa-sort-up"></i>
-  <i class="fas fa-sort-down"></i>
-  <i class="fas fa-spinner"></i>
-  <i class="fas fa-thumbs-up"></i>
-  <i class="fas fa-thumbs-down"></i>
-  <i class="fas fa-times"></i>
-  <i class="fas fa-thermometer-empty"></i>
-  <i class="fas fa-thermometer-full"></i>
-  <i class="fas fa-thermometer-half"></i>
-  <i class="fas fa-thermometer-quarter"></i>
-  <i class="fas fa-toggle-off"></i>
-  <i class="fas fa-toggle-on"></i>
-  <i class="far fa-trash-alt"></i>
-  <i class="fas fa-truck-moving"></i>
-  <i class="fas fa-umbrella"></i>
-  <i class="fas fa-university"></i>
-  <i class="fas fa-user"></i>
-  <i class="fas fa-user-edit"></i>
-  <i class="fas fa-user-secret"></i>
-  <i class="fas fa-user-tie"></i>
-  <i class="fas fa-vial"></i>
-  <i class="fas fa-wrench"></i>
-  <i class="fab fa-youtube"></i>
-  <i class="fab fa-facebook"></i>
-  <i class="fab fa-google"></i>
-  <i class="fab fa-superpowers"></i>
-  <i class="fas fa-address-book"></i>
-  <i class="far fa-address-book"></i>
-  <i class="fab fa-github"></i>
-  <i class="fab fa-github-alt"></i>
-  <i class="fab fa-github-square"></i>
+  </nav>
+<router-outlet></router-outlet>
 
 
 
-</div>
 
-<div class="container">
-  <table border='1' class = "table table-bordered table-striped table-hover">  
-    <tr>  
-      <td>Id</td>  
-      <td>Name</td>  
-      <td>Email</td>  
-      <td>Password</td>
-      <td>Edit</td>  
-      <td>Delete</td>  
-    </tr>  
-
-    <tr *ngFor="let temp of Repdata;let ind = index">     
-      <td>{{ind + 1}}</td>  
-      <td>{{temp.name}}</td>  
-      <td>{{temp.email}}</td>  
-      <td>{{temp.password}}</td>  
-      <td>
-        <button (click)="edit(temp)" class="btn btn-info"><i class="fas fa-pencil-alt"></i></button>
-      </td>  
-      <td>
-        <button (click)="delete(temp._id)" class = "btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-      </td>  
-    </tr>  
-  </table>  
-</div>
