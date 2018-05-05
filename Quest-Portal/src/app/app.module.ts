@@ -12,13 +12,14 @@ import { UserComponent } from './user/user.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AdventurerComponent } from './adventurer/adventurer.component';
 import { LandingComponent } from './landing/landing.component';
+import { LoginComponent } from './login/login.component';
 
 
 const appRoutes: Routes = [
   {path: 'resources', component: ResourcesComponent, data: {title: 'References and Resources'}}
   , {path: 'users', component: UserComponent, data: {title: 'User List of Greatness'}}
+  , {path: '', component: LoginComponent}
   , {path: '**', component: NotFoundComponent}
-  , {path: '', component: AppComponent}
 ];
 
 @NgModule({
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     UserComponent,
     NotFoundComponent,
     AdventurerComponent,
-    LandingComponent
+    LandingComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

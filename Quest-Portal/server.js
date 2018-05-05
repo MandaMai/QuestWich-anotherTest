@@ -24,9 +24,13 @@ app.use(function(req, res, next) {
 var Schema = mongo.Schema;
 
 var UsersSchema = new Schema({
-    name: {type: String},
+    firstName: {type: String},
+    lastName: {type: String},
+    birthdate: {type: String},
     email: {type: String},
-    password: {type: String}
+    password: {type: String},
+    nickname: {type: String},
+    phone: {type: String}
 },{versionKey: false});
 
 var model = mongo.model('users', UsersSchema, 'users');
@@ -46,7 +50,14 @@ app.post("/api/SaveUser",function(req,res){
    }  
    else   
    {  
-    model.findByIdAndUpdate(req.body.id, { name: req.body.name, email: req.body.email, password: req.body.password},  
+    model.findByIdAndUpdate(req.body.id, { 
+        firstName: req.body.firstName
+        , lastName: req.body.lastName
+        , birthdate: req.body.birthdate
+        , email: req.body.email
+        , password: req.body.password
+        , nickname: req.body.nickname
+        , phone: req.body.phone, },  
       function(err,data) {  
       if (err) {  
       res.send(err);         
