@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormsModule } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormsModule, NgForm } from '@angular/forms';
 import { CommonService } from '../common.service';
 
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
@@ -30,9 +30,11 @@ onSave = function(user, isValid: boolean) {
 
 edit = function(temp) {
   this.id = temp._id;
-  this.name = temp.name;
+  this.firstName = temp.firstName;
+  this.lastName = temp.lastName;
   this.email = temp.email;
   this.password = temp.password;
+  this.birthdate = temp.birthdate;
   this.valbutton = 'Update';
 };
 
